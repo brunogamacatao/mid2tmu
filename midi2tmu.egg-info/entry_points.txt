@@ -1,2 +1,0 @@
-[console_scripts]
-midi2tmu = midi2tmu.cli.main:main
