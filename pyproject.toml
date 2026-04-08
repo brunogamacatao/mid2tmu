@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "midi2tmu"
+version = "0.2.0"
+description = "MIDI to TriloTracker TMU converter (FM/OPLL target)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mido>=1.3",
+]
+
+[project.scripts]
+midi2tmu = "midi2tmu.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["midi2tmu*"]
